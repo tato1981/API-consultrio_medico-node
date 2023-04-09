@@ -1,0 +1,42 @@
+###
+POST http://localhost:7000/api/administrador HTTP/1.1
+Content-Type: application/json
+
+
+
+{
+    "nombre": "Luz Marina",
+    "apellidos": "Pedroza",
+    "email": "lumape44@gmail.com",
+    "password": "123456",
+    "repet_password": "123456"
+}
+
+
+###
+GET http://localhost:7000/api/paciente HTTP/1.1
+
+
+###
+GET http://localhost:7000/api/usuario/6431c5a42b2fbd5898d8e013  HTTP/1.1
+
+###
+
+PUT http://localhost:7000/api/usuario/6431c5a42b2fbd5898d8e013 HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "Luz Marina",
+    "apellidos": "Pedroza",
+    "documento": 38858136,
+    "fecha_nacimiento": "01/02/1959",
+    "edad": 63,
+    "email": "lumape44@gmail.com",
+    "direccion": "calle 36 45-74 palmira",
+    "telefono": 3166995847,
+    "servicio_salud": "coomeva"
+    
+}
+
+###
+DELETE http://localhost:7000/api/administrador/64322298448ecbe086942a14  HTTP/1.1
